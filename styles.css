@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #f9f9f9;
 }
@@ -711,3 +712,718 @@ footer a:hover {
 
 
 
+=======
+body {
+    background-color: #f9f9f9;
+}
+
+#outer-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 0;
+}
+
+#main-nav {
+    background: #9df8f4;
+    height: 76px;
+    padding: 0;
+}
+
+.background-image {
+    background-image: url('img/island-home.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-image h1 {
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+    text-shadow:  1px 1px 1px #0077be, 2px 0 3px #00a8cc, 0 1.5px 3px #cc0099, -2px 0 3px #00f5d4, 2px 0 2px #ede634 
+}
+
+.background-credits {
+    position: absolute;
+    bottom: .6rem;
+    right: .6rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem; 
+    padding: .2rem .6rem;
+    border-radius: 5px; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.background-image:hover .background-credits {
+    opacity: 1;
+}
+
+.nav-logo-img {
+    height: 70px; 
+    margin: 0 .5rem 0 2rem;
+}
+
+#nav-logo {
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;  
+}
+
+#nav-bar-link a {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.15rem;
+    color: #080808;
+    padding:.5rem  1rem;
+    margin-left: 1rem;
+}
+
+#nav-bar-link a:hover {
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: hwb(173 38% 8%);
+}
+
+#active-page {
+    border-radius: 15px;
+    background-color: hwb(173 38% 8%);
+    border: #25c4bc .1px solid;
+}
+
+/* About Section */
+
+.about-section {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(255, 254, 252);
+    border:  #6bcfca 2px solid;
+    border-radius: 20px;
+    margin: 3rem 12rem 5rem 12rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.link-section {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 1.2rem 3rem 1.2rem;
+}
+
+.link-section h1 {
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 4.8rem;
+    color: #008f94;
+}
+
+.link-grid {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #6bcfca;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-bottom: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.credits {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.459);
+    color: rgb(255, 254, 254);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .credits {
+    opacity: 1;
+}
+
+.title-box {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.title-box h3 {
+    margin: 0;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 2rem;
+    color: #0b7872;
+    font-weight: bold;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #e0f7f7;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #008080;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #008080;
+    margin-right: 2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.09);
+    transition: all 0.4s ease-in-out;
+}
+
+/* recreation page */
+.recreation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1.3rem;
+}
+
+.recreation-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    border: 2px solid #6bcfca;
+    border-radius: 10px;
+    padding: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #f9f9f9;
+}
+
+.recreation-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.recreation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recreation-image:hover img {
+    transform: scale(1.05);
+}
+
+
+.recreation-image:hover .credits {
+    opacity: 1;
+}
+
+.recreation-text {
+    flex: 1;
+}
+
+.recreation-text.left{
+   padding-left: 3rem;
+}
+
+.recreation-container.left {
+    gap: 30px;
+}
+
+.recreation-text h2 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 2rem;
+    color: #0b7872;
+    margin-bottom: 1rem;
+}
+
+.recreation-text ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 1.4rem;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/* lodging page */
+
+.lodging-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1.35rem;
+}
+
+.lodging-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    border: 2px solid #6bcfca;
+    border-radius: 10px;
+    padding: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #f9f9f9;
+}
+
+.lodging-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.lodging-image:hover .credits {
+    opacity: 1;
+}
+
+.lodging-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lodging-image:hover img {
+    transform: scale(1.05);
+}
+
+.lodging-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.lodging-text.left {
+    padding-left: 1.8rem;
+}
+
+
+.lodging-text h2 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 2rem;
+    color: #0b7872;
+    margin-bottom: 10px;
+}
+
+.lodging-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.book-now {
+    background-color: #0b7872;
+    color: white;
+    padding: .8rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now.two {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.book-now:hover {
+    background-color: #065d55;
+}
+
+.dining-intro{
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-top: 2.6rem;
+    color:#008f94;
+}
+
+
+/* faq page */
+
+
+.faq-section {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.faq-section h1 {
+    text-align: center;
+    color: #0b7872;
+    font-size: 3rem;
+    margin: 2rem 0 3rem 0;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 2px solid #6bcfca;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #f9f9f9;
+}
+
+.faq-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.faq-photo img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.faq-text {
+    flex: 2;
+}
+
+.faq-text h2 {
+    font-size: 1.8rem;
+    color: #0b7872;
+    margin-bottom: 1.2rem;
+}
+
+.faq-text p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* contact */
+.contact-section {
+    padding: 2.8rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+}
+
+.contact-section h1 {
+    color: #008080;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.contact-section h2 {
+    color: #008080;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    
+}
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.2); 
+    margin-bottom: 2.8rem;
+    text-align: center;
+}
+
+.contact-info p {
+    margin:.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.2);
+}
+
+.contact-form h2 {
+    color: #008080;
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin: 1rem 0 .5rem;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #008080;
+    color: #ffffff;
+    padding: .9rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #006666;
+}
+
+
+/* references */
+
+
+.references-section {
+    padding: 3rem;
+    margin: 2rem 0rem 5rem 5rem;
+}
+
+.references-section h1 {
+    text-align: center;
+    color: #008080;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.references-section h2 {
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+.attributions {
+    margin-top: 1.4rem;
+}
+
+.attributions p{
+    font-size: 1.1rem;
+}
+
+.attributions h2 {
+    color: #008080;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.attributions h3 {
+    color: #006666;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.attributions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attributions ul li {
+    margin: .8rem 0;
+    font-size: 1.1rem;
+}
+
+.attributions ul li a {
+    color: #008080;
+    text-decoration: none;
+}
+
+.attributions ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width: 1200px) {
+
+    #nav-bar-link a {
+        margin-left: .5rem;
+    }
+
+    .about-section {
+        margin: 3rem 7rem 5rem 7rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .lodging-section {
+        margin: 3rem 3rem;
+    }
+    
+}
+
+@media (max-width: 1080px) {
+    
+    #nav-bar-link a {
+        margin: 0;
+    }
+
+    #nav-bar-link a:hover {
+        transform: scale(1.05);
+    }
+    
+    .link-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .link-section {
+        display: grid;
+        gap: 90px;
+        margin: 2rem 5rem;
+        max-width: 1200px;
+        padding: 0 1.2rem 3rem 1.2rem;
+    }
+
+    .link-section h1 {
+        margin-bottom: .5rem;
+   }
+   
+    .about-section {
+        margin: 3rem 8rem 5rem 8rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .lodging-section {
+        margin: 2rem 4rem;
+    }
+
+    .faq-section {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 1rem;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-section {
+        padding: 4rem;
+    }
+
+    .contact-section h1 {
+       font-size: 2.5rem;
+    }      
+}
+
+
+
+@media (max-width: 992px) { 
+    .navbar-collapse {
+        background-color: #ffffff;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+>>>>>>> 3bb557e53776dfb393711e6f2c0dd6a6afdbc32e
